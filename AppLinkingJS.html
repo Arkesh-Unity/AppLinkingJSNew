@@ -3,18 +3,20 @@
 <script>
 function clickme(){
 openApp();
-setTimeout(fallbackToStore, 250)
+setTimeout(fallbackToStore, 250);
 }
 
 function openApp(){
-  window.location.replace('pushscheme://');
+ window.location.assign("pushscheme://huaweiapplinktest5.drcn.agconnect.link/");
+
 }
 
 function fallbackToStore(){
+     window.location.assign("http://www.google.com");
 } 
 </script>
 </head>
 <body>
-<button onclick="clickme()">App Linking</button>
+<button onclick="openApp()">App Linking</button>
 </body>
 </html>
