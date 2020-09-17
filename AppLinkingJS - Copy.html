@@ -11,14 +11,6 @@
         and app wouldn't open since it's not installed. In 1 second (1000 milliseconds) user is redirected
         to download app from app store.
      -->
-    <script>
-    window.onload = function() {
-    <!-- Deep link URL for existing users with app already installed on their device -->
-        window.location = 'intent://huaweiapplinktest5.drcn.agconnect.link/deeplink?#Intent;scheme=pushscheme;launchFlags=0x4000000;i.age=180;S.name=abc;end';
-    <!-- Download URL (TUNE link) for new users to download the app -->
-        setTimeout("window.location = 'http://hastrk.com/serve?action=click&publisher_id=1&site_id=2';", 1000);
-    }
-    </script>
 </head>
 <body>
  
